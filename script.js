@@ -48,6 +48,8 @@ function startScene(){
     For <span style="color:#ff7eb9">${window.receiverName}</span>
     `;
 
+    bloomFlower();
+    
     setTimeout(showHeart,3500);
 
 }
