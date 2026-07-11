@@ -477,6 +477,89 @@ width:120px;
 
 height:120px;
 
+/* ==========================
+   PART 6 - BLOOM ANIMATIONS
+========================== */
+
+@keyframes growStem{
+    from{
+        height:0;
+    }
+    to{
+        height:360px;
+    }
+}
+
+@keyframes showLeafLeft{
+    0%{
+        opacity:0;
+        transform:rotate(-35deg) scale(0);
+    }
+    100%{
+        opacity:1;
+        transform:rotate(-35deg) scale(1);
+    }
+}
+
+@keyframes showLeafRight{
+    0%{
+        opacity:0;
+        transform:rotate(145deg) scale(0);
+    }
+    100%{
+        opacity:1;
+        transform:rotate(145deg) scale(1);
+    }
+}
+
+@keyframes bloomRose{
+
+    0%{
+        transform:translateX(-50%) scale(0) rotate(-180deg);
+    }
+
+    60%{
+        transform:translateX(-50%) scale(1.15);
+    }
+
+    100%{
+        transform:translateX(-50%) scale(1);
+    }
+
+}
+
+@keyframes glowRose{
+
+    0%{
+        filter:drop-shadow(0 0 0px hotpink);
+    }
+
+    50%{
+        filter:drop-shadow(0 0 35px deeppink);
+    }
+
+    100%{
+        filter:drop-shadow(0 0 15px hotpink);
+    }
+
+}
+
+@keyframes heartBeat{
+
+    0%{
+        transform:translateX(-50%) scale(1);
+    }
+
+    50%{
+        transform:translateX(-50%) scale(1.18);
+    }
+
+    100%{
+        transform:translateX(-50%) scale(1);
+    }
+
+}   
+
 left:25px;
 
 top:30px;
